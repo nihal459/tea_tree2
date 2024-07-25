@@ -12,8 +12,102 @@
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="images/favicon.ico">
+        <style>
+
+
+            @media (max-width: 768px) {
+                .main-footer {
+                    height: 150px; /* Adjust the height for smaller screens */
+                    padding: 10px; /* Adjust padding for smaller screens */
+                }
+            }
+    
+            @media (max-width: 480px) {
+                .main-footer {
+                
+                    height: 1000px; /* Adjust the height for even smaller screens */
+                    padding: 0px; /* Adjust padding for smaller screens */
+                }
+            }
+    
+            .call-button {
+                position: fixed;
+                bottom: 90px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                background-color: rgb(92, 92, 255);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                z-index: 1000;
+            }
+    
+            .call-button img {
+                width: 30px;
+                height: 40px;
+                padding-top:10px;
+            }
+    
+            .call-button a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+            }
+    
+    
+    
+            .whatsapp-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                background-color: #25d366;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                z-index: 1000;
+            }
+    
+            .whatsapp-button img {
+                width: 40px;
+                height: 40px;
+                padding-top:10px;
+            }
+    
+            .whatsapp-button a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+            }
+    
+    
+    
+        </style>
     </head>
     <body>
+        <div class="whatsapp-button">
+            <a href="https://wa.me/8129033535" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </a>
+        </div>
+
+        <div class="call-button">
+            <a href="tel:+918281877917" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Call">
+            </a>
+        </div>
         <!-- lodaer  -->
         <div class="loader-wrap">
             <div class="loader-item">
@@ -31,7 +125,7 @@
                 <div class="container">
                     <!--  header-top -->
                     <div class="header-top  fl-wrap">
-                        <div class="header-top_contacts"><a href="#"><span>Call:</span> +91 8281877917</a><a href="#"><span>Find us:</span> Pappathichola, Suryanelly P.O, Chinnakanal, Munnar</a></div>
+                        <div class="header-top_contacts"><a href="#"><span>Call:</span> +91 8281877917, +91 8113825917</a><a href="#"><span>Find us:</span> Pappathichola, Suryanelly P.O, Chinnakanal, Munnar</a></div>
                         <div class="header-social">
                             <ul>
                                 <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -60,8 +154,8 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About</a></li>
                                     <li><a href="rooms.html" class="act-link">Accomodation</a></li>
-                                    <li><a href="">Places To Visit</a></li>
-                                    <li><a href="">Gallery</a></li>
+                                    <li><a href="places_to_visit.html">Places To Visit</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
                                     <li><a href="contact.html">Contact</a></li>
 
                                 </ul>
@@ -149,7 +243,7 @@
             <!--content-->
             <div class="content">
                 <!-- breadcrumbs-wrap  -->
-                <div class="breadcrumbs-wrap">
+                <div class="breadcrumbs-wrap" style="margin-top:-80px;">
                     <div class="container">
                     </div>
                 </div>
@@ -157,9 +251,9 @@
                 <!-- section   -->
                 <div class="content-section">
                     <div class="content-dec2 fs-wrapper"></div>
-                    <div class="section-dec"></div>
-                    <div class="container small-container ">
-                        <div class="fw-search-wrap">
+                    <!-- <div class="section-dec"></div> -->
+                    <!-- <div class="container small-container "> -->
+                        <!-- <div class="fw-search-wrap">
                             <form  class="custom-form" action="https://diamant.kwst.net/" name="searchform">
                                 <fieldset>
                                     <div class="row">
@@ -195,8 +289,8 @@
                                     </div>
                                 </fieldset>
                             </form>
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
                     <div class="container">
                         <div class="dec-container">
                             <div class="dc_dec-item_left"><span></span></div>
@@ -208,11 +302,11 @@
                                     <div class="gallery-item desserts">
                                         <div class="grid-item-holder hov_zoom">
                                             <img  src="images/room/1.jpg"    alt="">
-                                            <a href="images/room/1.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-magnifying-glass"></i></a>
-                                            <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div>
+                                            <a href="images/room/1.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-eye"></i></a>
+                                            <!-- <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div> -->
                                         </div>
                                         <div class="grid-item-details">
-                                            <h3><a href="room-single.html">Garden Family Room</a>  </h3>
+                                            <h3><a href="room-single.html">Luxury Room</a>  </h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum.  </p>
                                             <div class="room-card-details">
                                                 <ul>
@@ -232,11 +326,11 @@
                                     <div class="gallery-item seafood">
                                         <div class="grid-item-holder hov_zoom">
                                             <img  src="images/room/2.jpg"    alt="">
-                                            <a href="images/room/2.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-magnifying-glass"></i></a>
-                                            <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div>
+                                            <a href="images/room/2.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-eye"></i></a>
+                                            <!-- <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div> -->
                                         </div>
                                         <div class="grid-item-details">
-                                            <h3><a href="room-single.html">Premium Panorama Room</a></h3>
+                                            <h3><a href="room-single.html">Premium Room</a></h3>
                                             <p>Quisque varius eros ac purus dignissim. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit. Quisque varius eros ac purus dignissim.</p>
                                             <div class="room-card-details">
                                                 <ul>
@@ -256,11 +350,11 @@
                                     <div class="gallery-item desserts">
                                         <div class="grid-item-holder hov_zoom">
                                             <img  src="images/room/3.jpg"    alt="">
-                                            <a href="images/room/3.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-magnifying-glass"></i></a>
-                                            <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div>
+                                            <a href="images/room/3.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-eye"></i></a>
+                                            <!-- <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div> -->
                                         </div>
                                         <div class="grid-item-details">
-                                            <h3><a href="room-single.html">Beach Villa Room</a>  </h3>
+                                            <h3><a href="room-single.html">Deluxe Room</a>  </h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum.  </p>
                                             <div class="room-card-details">
                                                 <ul>
@@ -277,7 +371,7 @@
                                     </div>
                                     <!-- gallery-item end-->
                                     <!-- gallery-item-->
-                                    <div class="gallery-item seafood">
+                                    <!-- <div class="gallery-item seafood">
                                         <div class="grid-item-holder hov_zoom">
                                             <img  src="images/room/4.jpg"    alt="">
                                             <a href="images/room/4.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-magnifying-glass"></i></a>
@@ -298,10 +392,10 @@
                                             </div>
                                             <a href="room-single.html" class="gid_link"><span>View Details</span> <i class="fa-light fa-arrow-right-long"></i></a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- gallery-item end-->					
                                     <!-- gallery-item-->
-                                    <div class="gallery-item desserts">
+                                    <!-- <div class="gallery-item desserts">
                                         <div class="grid-item-holder hov_zoom">
                                             <img  src="images/room/5.jpg"    alt="">
                                             <a href="images/room/5.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-magnifying-glass"></i></a>
@@ -322,10 +416,10 @@
                                             </div>
                                             <a href="room-single.html" class="gid_link"><span>View Details</span> <i class="fa-light fa-arrow-right-long"></i></a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- gallery-item end-->
                                     <!-- gallery-item-->
-                                    <div class="gallery-item seafood">
+                                    <!-- <div class="gallery-item seafood">
                                         <div class="grid-item-holder hov_zoom">
                                             <img  src="images/room/6.jpg"    alt="">
                                             <a href="images/room/6.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-magnifying-glass"></i></a>
@@ -346,20 +440,20 @@
                                             </div>
                                             <a href="room-single.html" class="gid_link"><span>View Details</span> <i class="fa-light fa-arrow-right-long"></i></a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- gallery-item end-->										
                                 </div>
                             </div>
                         </div>
                         <!-- pagination-->
-                        <div class="pagination">
+                        <!-- <div class="pagination">
                             <a href="#" class="prevposts-link"><i class="fa fa-caret-left"></i></a>
                             <a href="#" >1</a>
                             <a href="#" class="current-page">2</a>
                             <a href="#">3</a>
                             <a href="#">4</a>
                             <a href="#" class="nextposts-link"><i class="fa fa-caret-right"></i></a>
-                        </div>
+                        </div> -->
                         <!-- pagination end-->	
                     </div>
                 </div>
@@ -369,7 +463,7 @@
             <!--content end-->
             <!--footer  -->
             <div class="height-emulator"></div>
-            <footer class="main-footer" style="background-image: url(images/munnarview.jpg); background-size: 100%;  background-position:center;">
+            <footer class="main-footer" style="background-image:url('images/abcd.jpg'); background-size: cover; background-repeat: no-repeat;">
 
                 <div class="footer-inner">
                     <div class="container">
@@ -382,10 +476,10 @@
                                 <!-- footer-widget -->
                                 <div class="col-lg-3">
                                     <div class="footer-widget">
-                                        <div class="footer-widget-title" style="color:rgb(110, 47, 2);">About us</div>
+                                        <div class="footer-widget-title" >About us</div>
                                         <div class="footer-widget-content">
-                                            <p style="color:rgb(110, 47, 2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eaque ipsa quae ab illo inventore veritatis et quasi architecto. Consectetur adipiscing elit. </p>
-                                            <a href="about.html" class="footer-widget-content-link"><span style="font-weight: 700; color:black;">Read more</span></a>                                                    	
+                                            <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eaque ipsa quae ab illo inventore veritatis et quasi architecto. Consectetur adipiscing elit.</b></p>
+                                            <a href="about.html" class="footer-widget-content-link"><span>Read more</span></a>                                                    	
                                         </div>
                                     </div>
                                 </div>
@@ -393,16 +487,15 @@
                                 <!-- footer-widget -->
                                 <div class="col-lg-3">
                                     <div class="footer-widget">
-                                        <div class="footer-widget-title" style="color:rgb(110, 47, 2);">Contact info  </div>
+                                        <div class="footer-widget-title">Contact info  </div>
                                         <div class="footer-widget-content">
                                             <div class="footer-contacts footer-box">
                                                 <ul>
-                                                    <li><span style="color:rgb(110, 47, 2);">Call :</span><a href="#" style="color:rgb(110, 47, 2);">+91 8281877917</a></li>
-                                                    <li><span style="color:rgb(110, 47, 2);">Write  :</span><a href="#" style="color:rgb(110, 47, 2);">yourmail@domain.com</a></li>
-                                                    <li><span style="color:rgb(110, 47, 2);">Find us : </span><a href="#" style="color:rgb(110, 47, 2);">Pappathichola, Suryanelly P.O, Chinnakanal, Munnar</a></li>
+                                                    <li><span>Call :</span><a href="tel:+918281877917">+91 8281877917,</a><a href="tel:+918113825917">+91 8113825917</a></li>
+                                                    <li><span>Write  :</span><a href="mailto:teatreemunnar@gmail.com">teatreemunnar@gmail.com</a></li>
+                                                    <li><span>Find us : </span><a href="#">Pappathichola, Suryanelly P.O, Chinnakanal, Munnar</a></li>
                                                 </ul>
                                             </div>
-                                            <a href="contacts.html" class="footer-widget-content-link"><span style="font-weight: 700; color:black;">Get in Touch</span></a>                                                    	
                                         </div>
                                     </div>
                                 </div>
@@ -410,15 +503,15 @@
                                 <!-- footer-widget -->
                                 <div class="col-lg-2">
                                     <div class="footer-widget">
-                                        <div class="footer-widget-title" style="color:rgb(110, 47, 2);">Helpful links</div>
+                                        <div class="footer-widget-title">Helpful links</div>
                                         <div class="footer-widget-content">
                                             <div class="footer-list footer-box  ">
                                                 <ul>
-                                                    <li><a href="#" style="color:rgb(110, 47, 2);">Our last News</a></li>
-                                                    <li><a href="#" style="color:rgb(110, 47, 2);">Rooms</a></li>
-                                                    <li><a href="#" style="color:rgb(110, 47, 2);">Contacts</a></li>
-                                                    <li><a href="#" style="color:rgb(110, 47, 2);">About</a></li>
-                                                    <li><a href="#" style="color:rgb(110, 47, 2);">Privacy Policy</a></li>
+                                                    <li><a href="rooms.html" >Accomodation</a></li>
+                                                    <li><a href="places_to_visit.html" >Places To Visit</a></li>
+                                                    <li><a href="gallery.html" >Gallery</a></li>
+                                                    <li><a href="contact.html" >Contact</a></li>
+                                                    <li><a href="#" >Privacy Policy</a></li>
                                                 </ul>
                                             </div>
                                         </div>
