@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
     
-<!-- Mirrored from diamant.kwst.net/site/rooms.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2024 14:40:38 GMT -->
 <head>
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
@@ -92,6 +91,97 @@
                 text-decoration: none;
             }
     
+
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1000; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0, 0, 0); /* Fallback color */
+                background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+                padding-top: 60px;
+            }
+
+            /* Modal Content */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+                max-width: 600px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            /* The Close Button */
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+
+            .close2 {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close2:hover,
+            .close2:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+
+
+            .close3 {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close3:hover,
+            .close3:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+
+
+
+            /* Responsive */
+            @media screen and (max-width: 768px) {
+                .modal-content {
+                    width: 90%;
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                .modal-content {
+                    width: 95%;
+                }
+            }
+
     
     
         </style>
@@ -247,220 +337,241 @@
                     <div class="container">
                     </div>
                 </div>
-                <!--breadcrumbs-wrap end  -->
-                <!-- section   -->
+             
                 <div class="content-section">
                     <div class="content-dec2 fs-wrapper"></div>
-                    <!-- <div class="section-dec"></div> -->
-                    <!-- <div class="container small-container "> -->
-                        <!-- <div class="fw-search-wrap">
-                            <form  class="custom-form" action="https://diamant.kwst.net/" name="searchform">
-                                <fieldset>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="date-container input-wrap">
-                                                <label>Date:</label>
-                                                <input type="text" id="res_date"     name="resdate"   value="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="quantity">
-                                                <div class="quantity_title">Rooms: </div>
-                                                <div class="quantity-item">
-                                                    <input type="button" value="-" class="minus">
-                                                    <input type="text"    name="quantity"   title="Qty" class="qty color-bg" data-min="1" data-max="10" data-step="1" value="1">
-                                                    <input type="button" value="+" class="plus">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="quantity">
-                                                <div class="quantity_title">Guests: </div>
-                                                <div class="quantity-item">
-                                                    <input type="button" value="-" class="minus">
-                                                    <input type="text"    name="quantity"   title="Qty" class="qty color-bg" data-min="1" data-max="10" data-step="1" value="1">
-                                                    <input type="button" value="+" class="plus">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <button class="searchform-submit" id="searchform-submit">Search Room</button>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div> -->
-                    <!-- </div> -->
+                 
                     <div class="container">
                         <div class="dec-container">
                             <div class="dc_dec-item_left"><span></span></div>
                             <div class="dc_dec-item_right"><span></span></div>
                             <div class="text-block">
-                                <!-- gallery start -->
                                 <div class="gallery-items grid-big-pad  lightgallery  ">
-                                    <!-- gallery-item-->
                                     <div class="gallery-item desserts">
                                         <div class="grid-item-holder hov_zoom">
                                             <img  src="images/kolukkumalai.jpg"    alt="">
                                             <a href="images/kolukkumalai.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-eye"></i></a>
-                                            <!-- <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div> -->
                                         </div>
                                         <div class="grid-item-details">
-                                            <h3><a href="room-single.html">Kolukkumalai</a>  </h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum.  </p>
-                                            <!-- <div class="room-card-details">
-                                                <ul>
-                                                    <li><i class="fa-light fa-user"></i><span>2 Guest</span></li>
-                                                    <li><i class="fa-light fa-bed-front"></i><span>1 Bed</span></li>
-                                                    <li><i class="fa-light fa-bath"></i><span>1 Bath</span></li>
-                                                </ul>
-                                            </div> -->
-                                            <!-- <div class="grid-item_price">
-                                                <span>₹129/Night</span>
-                                            </div> -->
-                                            <a href="room-single.html" class="gid_link"><span>View Details</span> <i class="fa-light fa-arrow-right-long"></i></a>
-                                        </div>
+                                            <h3><a href="room-single.html">Gap Road Viewpoint</a>  </h3>
+                                            <p>The road to Gap Road Viewpoint is an adventure in itself. A serpentine ribbon cutting
+                                                through the heart of the Western Ghats, it winds its way upward, offering glimpses of the
+                                                breathtaking panorama below.</p>
+                                          
+                                                <button id="openModalBtn3" class="gid_link">View Details<i class="fa-light fa-arrow-right-long"></i></button>
+                                            </div>
                                     </div>
-                                    <!-- gallery-item end-->
-                                    <!-- gallery-item-->
+                             
                                     <div class="gallery-item seafood">
                                         <div class="grid-item-holder hov_zoom">
                                             <img  src="images/anamudi.jpg"    alt="">
                                             <a href="images/anamudi.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-eye"></i></a>
-                                            <!-- <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div> -->
                                         </div>
                                         <div class="grid-item-details">
-                                            <h3><a href="room-single.html">Bose Peak</a></h3>
-                                            <p>Quisque varius eros ac purus dignissim. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit. Quisque varius eros ac purus dignissim.</p>
-                                            <!-- <div class="room-card-details">
-                                                <ul>
-                                                    <li><i class="fa-light fa-user"></i><span>4 Guest</span></li>
-                                                    <li><i class="fa-light fa-bed-front"></i><span>2 Bed</span></li>
-                                                    <li><i class="fa-light fa-bath"></i><span>2 Bath</span></li>
-                                                </ul>
-                                            </div> -->
-                                            <!-- <div class="grid-item_price">
-                                                <span>₹230/Night</span>
-                                            </div> -->
-                                            <a href="room-single.html" class="gid_link"><span>View Details</span> <i class="fa-light fa-arrow-right-long"></i></a>
+                                            <h3><a href="room-single.html">Anayirangal Dam</a></h3>
+                                            <p>Anayirangal Dam, an emerald jewel nestled amidst a verdant tapestry. A serene haven
+                                                where nature&#39;s palette unfolds in hues of green, it beckons weary souls to its tranquil
+                                                embrace</p>
+                                            
+                                            <button id="openModalBtn2" class="gid_link">View Details<i class="fa-light fa-arrow-right-long"></i></button>
                                         </div>
                                     </div>
-                                    <!-- gallery-item end-->
-                                    <!-- gallery-item-->
+                                 
                                     <div class="gallery-item desserts">
                                         <div class="grid-item-holder hov_zoom">
                                             <img  src="images/anamudi.jpg"    alt="">
                                             <a href="images/anamudi.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-eye"></i></a>
-                                            <!-- <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div> -->
                                         </div>
                                         <div class="grid-item-details">
-                                            <h3><a href="room-single.html">Anamudi</a>  </h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum.  </p>
-                                            <!-- <div class="room-card-details">
-                                                <ul>
-                                                    <li><i class="fa-light fa-user"></i><span>2 Guest</span></li>
-                                                    <li><i class="fa-light fa-bed-front"></i><span>1 Bed</span></li>
-                                                    <li><i class="fa-light fa-bath"></i><span>1 Bath</span></li>
-                                                </ul>
-                                            </div> -->
-                                            <!-- <div class="grid-item_price">
-                                                <span>₹321/Night</span>
-                                            </div> -->
-                                            <a href="room-single.html" class="gid_link"><span>View Details</span> <i class="fa-light fa-arrow-right-long"></i></a>
+                                            <h3><a href="">Kolukkumalai</a>  </h3>
+                                            <p>Kolukkumalai, an opulent crown atop the Western Ghats, is a realm where nature paints its
+                                                most exquisite masterpiece. A celestial garden, it stretches towards the heavens, its
+                                                emerald carpet kissed by the sun&#39;s golden rays.</p>
+                                            <button id="openModalBtn" class="gid_link">View Details<i class="fa-light fa-arrow-right-long"></i></button>
                                         </div>
                                     </div>
-                                    <!-- gallery-item end-->
-                                    <!-- gallery-item-->
-                                    <!-- <div class="gallery-item seafood">
-                                        <div class="grid-item-holder hov_zoom">
-                                            <img  src="images/room/4.jpg"    alt="">
-                                            <a href="images/room/4.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-magnifying-glass"></i></a>
-                                            <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div>
-                                        </div>
-                                        <div class="grid-item-details">
-                                            <h3><a href="room-single.html">Comfort Room </a></h3>
-                                            <p>Quisque varius eros ac purus dignissim. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit. Quisque varius eros ac purus dignissim.</p>
-                                            <div class="room-card-details">
-                                                <ul>
-                                                    <li><i class="fa-light fa-user"></i><span>1 Guest</span></li>
-                                                    <li><i class="fa-light fa-bed-front"></i><span>1 Bed</span></li>
-                                                    <li><i class="fa-light fa-bath"></i><span>1 Bath</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="grid-item_price">
-                                                <span>₹84/Night</span>
-                                            </div>
-                                            <a href="room-single.html" class="gid_link"><span>View Details</span> <i class="fa-light fa-arrow-right-long"></i></a>
-                                        </div>
-                                    </div> -->
-                                    <!-- gallery-item end-->					
-                                    <!-- gallery-item-->
-                                    <!-- <div class="gallery-item desserts">
-                                        <div class="grid-item-holder hov_zoom">
-                                            <img  src="images/room/5.jpg"    alt="">
-                                            <a href="images/room/5.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-magnifying-glass"></i></a>
-                                            <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div>
-                                        </div>
-                                        <div class="grid-item-details">
-                                            <h3><a href="room-single.html"> Presidential Suite</a>  </h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum.  </p>
-                                            <div class="room-card-details">
-                                                <ul>
-                                                    <li><i class="fa-light fa-user"></i><span>2 Guest</span></li>
-                                                    <li><i class="fa-light fa-bed-front"></i><span>1 Bed</span></li>
-                                                    <li><i class="fa-light fa-bath"></i><span>1 Bath</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="grid-item_price">
-                                                <span>₹543/Night</span>
-                                            </div>
-                                            <a href="room-single.html" class="gid_link"><span>View Details</span> <i class="fa-light fa-arrow-right-long"></i></a>
-                                        </div>
-                                    </div> -->
-                                    <!-- gallery-item end-->
-                                    <!-- gallery-item-->
-                                    <!-- <div class="gallery-item seafood">
-                                        <div class="grid-item-holder hov_zoom">
-                                            <img  src="images/room/6.jpg"    alt="">
-                                            <a href="images/room/6.jpg" class="box-media-zoom   single-popup-image"><i class="fa-light fa-magnifying-glass"></i></a>
-                                            <div class="like-btn"><i class="fa-light fa-heart"></i> <span>Add to Wislist</span></div>
-                                        </div>
-                                        <div class="grid-item-details">
-                                            <h3><a href="room-single.html">Superior  Panorama Room</a></h3>
-                                            <p>Quisque varius eros ac purus dignissim. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit. Quisque varius eros ac purus dignissim.</p>
-                                            <div class="room-card-details">
-                                                <ul>
-                                                    <li><i class="fa-light fa-user"></i><span>3 Guest</span></li>
-                                                    <li><i class="fa-light fa-bed-front"></i><span>2 Bed</span></li>
-                                                    <li><i class="fa-light fa-bath"></i><span>1 Bath</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="grid-item_price">
-                                                <span>₹1030/Night</span>
-                                            </div>
-                                            <a href="room-single.html" class="gid_link"><span>View Details</span> <i class="fa-light fa-arrow-right-long"></i></a>
-                                        </div>
-                                    </div> -->
-                                    <!-- gallery-item end-->										
+                                
+                               
                                 </div>
                             </div>
                         </div>
-                        <!-- pagination-->
-                        <!-- <div class="pagination">
-                            <a href="#" class="prevposts-link"><i class="fa fa-caret-left"></i></a>
-                            <a href="#" >1</a>
-                            <a href="#" class="current-page">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#" class="nextposts-link"><i class="fa fa-caret-right"></i></a>
-                        </div> -->
-                        <!-- pagination end-->	
+                    
                     </div>
                 </div>
                 <!-- section end  -->
                 <div class="content-dec"><span></span></div>
             </div>
             <!--content end-->
+
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h1 style="font-size: 22px;">Kolukkumalai</h1>
+                  <br>
+                  <p>Kolukkumalai, an opulent crown atop the Western Ghats, is a realm where nature paints its
+                    most exquisite masterpiece. A celestial garden, it stretches towards the heavens, its
+                    emerald carpet kissed by the sun&#39;s golden rays.</p>
+                    <p>A verdant tapestry unfolds at Kolukkumalai, a mere sojourn from our haven. This
+                        exalted tea plantation, crowned as the world’s highest, invites you to immerse yourself in a
+                        panorama of unparalleled beauty. As the mist-kissed mountains and verdant valleys unfurl
+                        before you, embark on a journey through time as you explore the tea factory, a living
+                        testament to centuries-old craftsmanship. This is an idyllic retreat for nature&#39;s enthusiasts
+                        and connoisseurs of the leaf alike. The wind, a sage whispering through emerald leaves,
+                        carries Kolukkumalai&#39;s ancient wisdom to a sanctuary where where time stands still,
+                        allowing the soul to rejuvenate.</p>
+                    <p>The path winds its way up the Western Ghats, offering a series of hairpin bends that
+                        test the nerves of even the most seasoned drivers. The road is often carved into the
+                        mountainside, offering sheer drops on one side and towering cliffs on the other. If you&#39;re
+                        lucky enough to experience a misty morning, the drive becomes even more ethereal. The
+                        mountains appear shrouded in a veil of white, creating a mystical atmosphere.</p>
+                    
+                </div>
+            </div>
+
+
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                  <span class="close2">&times;</span>
+                  <h1 style="font-size: 22px;">Anayirangal Dam</h1>
+                  <br>
+                  <p>Anayirangal Dam, an emerald jewel nestled amidst a verdant tapestry. A serene haven
+                    where nature&#39;s palette unfolds in hues of green, it beckons weary souls to its tranquil
+                    embrace. As the gentle waters kiss the dam&#39;s foundation, a symphony of tranquility fills the
+                    air. Wander through emerald corridors, where towering trees stand as silent sentinels, and
+                    the soft rustle of leaves is nature&#39;s lullaby. Share laughter and love on its emerald banks, as
+                    the sun paints the sky with hues of gold and crimson. Let the soul find solace in this verdant
+                    sanctuary, rejuvenated by nature&#39;s embrace.</p>
+                    <p>Anayirangal Dam is more than just a body of water; it&#39;s a masterpiece etched by
+                        nature. The dam mirrors the sky&#39;s azure expanse with serene perfection. It crowns the earth
+                        like a diadem of liquid silver, its tranquil waters shimmering under the sun&#39;s gentle caress. A
+                        whispered secret of the forest, this hidden sanctuary invites you to slow down time and let
+                        your dreams dance upon its reflective surface.</p>
+                
+                </div>
+            </div>
+
+
+
+            <div id="myModal3" class="modal">
+                <div class="modal-content">
+                  <span class="close3">&times;</span>
+                  <h1 style="font-size: 22px;">Gap Road Viewpoint</h1>
+                  <br>
+                  <p>The road to Gap Road Viewpoint is an adventure in itself. A serpentine ribbon cutting
+                    through the heart of the Western Ghats, it winds its way upward, offering glimpses of the
+                    breathtaking panorama below. The road, often hugging the mountainside, is a testament to
+                    human ingenuity and nature’s grandeur.</p>
+                    <p>Perched at the precipice of enchantment, Gap Road Viewpoint unveils a panorama
+                        that is nothing short of celestial. A verdant tapestry of rolling hills unfurls below, stitched
+                        together with silver threads of cascading waterfalls. As if painted by an ethereal artist, the
+                        landscape is a masterpiece of nature&#39;s own creation.</p>
+                    <p>Watch as the sky transforms into a living canvas, where clouds dance and play, their
+                        ethereal forms shifting and changing with every passing moment. Capture the essence of
+                        this breathtaking spectacle, a moment frozen in time, a treasure trove for the soul and the
+                        camera alike. This is not merely a viewpoint; it&#39;s a portal to a world of wonder, where
+                        dreamscape and reality intertwine.</p>
+                    <p>Witness mesmerizing clouds drift by and capture unforgettable photos at this
+                        stunning spot, Perfect for nature lovers and photographers.</p>
+                
+                </div>
+            </div>
+
+
+
+
+
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+            
+                // Get the button that opens the modal
+                var btn = document.getElementById("openModalBtn");
+            
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+            
+                // When the user clicks the button, open the modal
+                btn.onclick = function () {
+                    modal.style.display = "block";
+                }
+            
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+            
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+
+
+             // Get the modal
+             var modal2= document.getElementById("myModal2");
+            
+            // Get the button that opens the modal
+            var btn2 = document.getElementById("openModalBtn2");
+        
+            // Get the <span> element that closes the modal
+            var span2 = document.getElementsByClassName("close2")[0];
+        
+            // When the user clicks the button, open the modal
+            btn2.onclick = function () {
+                modal2.style.display = "block";
+            }
+        
+            // When the user clicks on <span> (x), close the modal
+            span2.onclick = function () {
+                modal2.style.display = "none";
+            }
+        
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal2) {
+                    modal2.style.display = "none";
+                }
+            }
+
+
+            var modal3= document.getElementById("myModal3");
+            
+            // Get the button that opens the modal
+            var btn3 = document.getElementById("openModalBtn3");
+        
+            // Get the <span> element that closes the modal
+            var span3 = document.getElementsByClassName("close3")[0];
+        
+            // When the user clicks the button, open the modal
+            btn3.onclick = function () {
+                modal3.style.display = "block";
+            }
+        
+            // When the user clicks on <span> (x), close the modal
+            span3.onclick = function () {
+                modal3.style.display = "none";
+            }
+        
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal3) {
+                    modal3.style.display = "none";
+                }
+            }
+
+
+
+            </script>
+            
+
+
+
+
+
+
             <!--footer  -->
             <div class="height-emulator"></div>
             <footer class="main-footer" style="background-image:url('images/abcd.jpg'); background-size: cover; background-repeat: no-repeat;">
@@ -550,9 +661,7 @@
                 </div>
                 <div class="footer-bottom">
                     <div class="container">
-                        <!-- <a href="index.html" class="footer-logo"><img src="images/logo.png" alt=""></a> -->
                         <div class="copyright">&#169; Tea Tree Resort 2024 . All rights reserved. </div>
-                        <!-- <div class="to-top"><span>Back To Top </span><i class="fal fa-angle-double-up"></i></div> -->
                     </div>
                 </div>
             </footer>
@@ -565,5 +674,4 @@
         <script  src="js/scripts.js"></script>
     </body>
 
-<!-- Mirrored from diamant.kwst.net/site/rooms.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2024 14:40:38 GMT -->
 </html>

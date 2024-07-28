@@ -1267,7 +1267,7 @@ nav li ul a:before , nav li ul a:after {
     right: 0;
     bottom: 0;
     height: 50%;
-    background: linear-gradient(to bottom, rgba(39, 37, 53, 0) 0%, rgba(39, 37, 53, 0.99) 100%);
+    /* background: linear-gradient(to bottom, rgba(39, 37, 53, 0) 0%, rgba(39, 37, 53, 0.99) 100%); */
     z-index: 1;
 } 
 .htc_single_item_dec:before {
@@ -5284,7 +5284,7 @@ quantity , .quantity_title {
 }
 .serach-header-btn  {
  	padding: 0;
-	width: 60px;
+	width: 0px;
 	background: #fff;
 }
 .serach-header-btn:hover , .show-cart:hover, .show-share-btn:hover {
