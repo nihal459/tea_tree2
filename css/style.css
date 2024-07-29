@@ -31,7 +31,7 @@ body{
 	font-family: var(--main-font);
 	font-weight: 400;
 	font-size: 12px;
- 	background: #483d2a;
+ 	background: #ffffff;
 	height:100%;
 	text-align:center;
 	color:#1e1e1e;
@@ -142,7 +142,7 @@ blockquote p {
 	transform: translateY(-50%) translateX(-98%);
 	height: 100%;
 	width: 2500%;
-	background: url(../images/ink2.png) no-repeat 0 0;
+	/* background: url(../images/ink2.png) no-repeat 0 0; */
 	background-size: 100% 100%;
 }
  .cd-loader-layer.visible   {
