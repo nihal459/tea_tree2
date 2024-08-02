@@ -41,7 +41,8 @@ body{
 @viewport {width: device-width;}
 /*--------------Typography--------------------------------------*/
 p {
-	text-align: left;
+	text-align: justify;
+	text-align-last: center;
     font-size: 14px;
     line-height: 24px;
     padding-bottom: 10px;
@@ -2076,7 +2077,8 @@ quantity , .quantity_title {
 	font-style:italic;
 }
 .grid-item-details p {
-	text-align:left;
+	text-align:justify;
+	text-align-last:center;
 	font-size: 1.2em;
 }
 .grid-item_price span{
